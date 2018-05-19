@@ -1,0 +1,41 @@
+* {box-sizing: border-box}
+/* Set height of body and the document to 100% */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* Style tab links */
+.tablink {
+    background-color: snow;
+    color: black;
+    float: left;
+    border: none;
+    border-bottom: solid 2px #555;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+    transition: background-color color 0.8s;
+}
+.tablink:hover {
+    background-color: #008080;
+    color: snow;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+
+}
+
+
+#About {background-color: MistyRose;}
+#Projects {background-color: MistyRose;}
+#Contact {background-color: MistyRose;}

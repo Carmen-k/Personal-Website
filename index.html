@@ -1,0 +1,75 @@
+<html></html>
+<html>
+  <head>
+    <title>Carmen Kirby</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </style>
+
+  </head>
+<body>
+  <button class="tablink" onclick="openPage('About', this)" id="defaultOpen">About</button>
+        <button class="tablink" onclick="openPage('Projects', this)">Projects</button>
+        <button class="tablink" onclick="openPage('Contact', this)">Contact</button>
+
+        <div id="About" class="tabcontent">
+            <p><div>
+              <div>
+            </div>
+              <h1>Carmen Kirby</h1>
+            </div>
+            <h2>Who am I?</h2>
+            <p>
+              Learning Designer with a passion for crafting engaging and memorable digital learning experiences. Is on a mission to <strong> help people achieve their potential. </strong>
+            </p>
+              Loves travel, adventure and expanding horizons.
+            <h2>What do I do?</h2>
+            <ul>
+            <li>Experience of creating digital learning using Articulate 360 (Storyline 2 and 3)
+            <li>Graphic design skills, including experience with Adobe Creative Suite (Illustrator and Photoshop)
+            <li>Knowledge of learning theory and instructional design
+            <li>Knowledge of front-end web development (HTML and CSS)
+            <li>Creative thinking and a passion for innovation and getting things right for the learner
+            <li>Illustration, animation, video editing or programming/coding experience
+            <li>Project management skills
+            <li>Stakeholder management and influencing skills
+            <li>Experience of evaluating the impact of learning
+            </ol>
+            <ul>
+              <li><img src="images/thisone.jpg" alt="headshot"></li>
+            </ul>
+            </div>
+            <div>
+
+        </div>
+
+        <div id="Projects" class="tabcontent">
+            <h3>Projects</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+
+
+        <div id="Contact" class="tabcontent">
+            <h3>Get in touch!</h3>
+            <p>carmen.n.kirby@gmail.com.</p>
+        </div>
+
+        <script>
+            function openPage(pageName,elmnt,color) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].style.backgroundColor = "";
+                }
+                document.getElementById(pageName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+            }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+            </script>
+          </body>
+</html>
